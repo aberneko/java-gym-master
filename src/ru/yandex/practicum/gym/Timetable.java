@@ -51,7 +51,6 @@ public class Timetable {
     public List<CounterOfTrainings> getCountByCoaches() {
         HashMap<Coach, Integer> countsMap = new HashMap<>();
 
-        // Твой тройной цикл для подсчета
         for (TreeMap<TimeOfDay, ArrayList<TrainingSession>> dayMap : timetable.values()) {
             for (ArrayList<TrainingSession> sessionsList : dayMap.values()) {
                 for (TrainingSession session : sessionsList) {
