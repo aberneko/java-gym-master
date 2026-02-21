@@ -33,4 +33,9 @@ public class TrainingSession {
     public TimeOfDay getTimeOfDay() {
         return timeOfDay;
     }
+
+    @Override
+    public String toString(){
+        return String.format("%s - %s", timeOfDay, group);
+    }
 }
